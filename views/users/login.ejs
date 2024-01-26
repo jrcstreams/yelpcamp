@@ -1,0 +1,51 @@
+<% layout('layouts/boilerplate') %>
+
+
+
+
+    <div class="container justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://plus.unsplash.com/premium_photo-1681266267802-038ebfc4277f?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="card-img-top mb-2" />
+                        <h5 class="card-title mt-2">Login</h5>
+                        <form action="/login" method="POST" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Username</label>
+                                <input class="form-control" type="text" id="username" name="username" autofocus
+                                    required>
+                                <div class="valid-feedback">
+                                    Look great!
+                                </div>
+                                <div class="invalid-feedback">
+                                    If you fill this field out wrong one more time, you will be sent directly to jail.
+                                    No
+                                    passing
+                                    GO, no $200.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" id="password" name="password" required>
+                                <div class="valid-feedback">
+                                    Look great!
+                                </div>
+                                <div class="invalid-feedback">
+                                    If you fill this field out wrong one more time, you will be sent directly to jail.
+                                    No
+                                    passing
+                                    GO, no $200.
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-success">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
