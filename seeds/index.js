@@ -4,18 +4,37 @@ const { places, descriptors } = require('./seedHelpers')
 const Campground = require('../models/campground')
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp', {
+// LOCAL CONNECTION // 
+
+// mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// })
+
+// MONGO CONNECTION 
+
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
+const dbUrl = process.env.DB_URL;
+
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 })
+
 
 main().catch(err => {
     console.log(err)
     console.log('MONGOOSE CONNECTION ERROR')
 });
 
+// UPDATE THE BELOW LINES FOR MONGO OR LOCAL // 
+
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
+    // await mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
+    await mongoose.connect(dbUrl);
     return console.log('Yelpcamp Database Connected ⛺')
 }
 
