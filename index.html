@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fast Content</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+
+
+<!-- NAV HEADER -->
+
+<!-- <nav>
+<h1 class="mainTitle">FAST CONTENT</h1>
+<button class="mainButton" id='sportsButton' value=sports onclick="sportsNews(this.value)">Sports News</button>
+<button class="mainButton" id='worldButton' value=world onclick="worldNews(this.value)">World News</button>
+</nav> -->
+
+    <div class="header">
+<h1 class="mainTitle">FAST CONTENT</h1>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a id="navControl" href="javascript:void(0);" style="font-size:16px; font-weight: 700;" class="icon"
+            onclick="myFunction()">&#9776;</a>
+        <a href="#" class="home active"  onclick="worldNews()"><strong>Home</strong></a>
+        <a href="#news" onclick="worldNews()">Other</a>
+            <div class="dropdown">
+                <button class="dropbtn"><a class="linkedNav" href="#" onclick="worldNews()">News</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a class="linkedNav" href="#" onclick="sportsNews()">Sports</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="sportsNews(); myFunction();">Sports Main</a>
+                    <a href="#" onclick="mlbNews(); myFunction();">MLB</a>
+                    <a href="#" onclick="nbaNews(); myFunction();">NBA</a>
+                    <a href="#" onclick="nflNews(); myFunction();">NFL</a>
+                    <a href="#" onclick="nhlNews(); myFunction();">NHL</a>
+                    <a href="#" onclick="soccerNews(); myFunction();">Soccer</a>
+                </div>
+            </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a class="linkedNav" href="#">Dropdown</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#" onclick="frameHeight();">About</a>
+    </div>
+    
+   
+<!-- END OF NAV HEADER -->
+
+<div class="subNavSection" id="subNavSection"></div>
+
+<!-- START OF CONTENT COLUMNS -->
+
+<div class="responsive-three-column-grid">
+    <div>
+        <div class="myDiv1" id="myDiv">
+        <script
+            src='https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml&amp;embed_render_copy_link=0&amp;embed_title_replacement=World+News&amp;feed_title_fallback=New+York+Times&amp;feed_render_image=0&amp;feed_render_link=0&amp;feed_title_link_open_new_tab=0&amp;feed_render_description=0&amp;item_count=10&amp;item_render_body=0&amp;item_published_label=&amp;item_published_format=%25a+%25b+%25e&amp;embed_tag=div+id%3D%22mainNews%22'></script>
+        </div>
+        <div class="myDiv1" id="myDiv">
+        <script src='https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml&amp;embed_render_copy_link=0&amp;embed_title_replacement=World+News&amp;feed_title_fallback=New+York+Times&amp;feed_render_image=0&amp;feed_render_link=0&amp;feed_title_link_open_new_tab=0&amp;feed_render_description=0&amp;item_count=10&amp;item_render_body=0&amp;item_published_label=&amp;item_published_format=%25a+%25b+%25e&amp;embed_tag=div+id%3D%22mainNews%22'></script>
+    </div>
+    </div>
+    <div class="myDiv2" id="myDiv2">
+        <!-- <script
+            src='https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml&amp;embed_render_copy_link=0&amp;embed_title_replacement=World+News&amp;feed_title_fallback=New+York+Times&amp;feed_render_image=0&amp;feed_render_link=0&amp;feed_title_link_open_new_tab=0&amp;feed_render_description=0&amp;item_count=10&amp;item_render_body=0&amp;item_published_label=&amp;item_published_format=%25a+%25b+%25e&amp;embed_tag=div+id%3D%22mainNews%22'></script> -->
+<blockquote class="reddit-embed-bq" data-embed-height="900">Posts from the <a
+        href="https://www.reddit.com/r/worldnews/">worldnews</a><br> community on Reddit</blockquote>
+<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+    </div>
+    <div class="myDiv3" id="myDiv3">
+        <!-- <script
+            src='https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml&amp;embed_render_copy_link=0&amp;embed_title_replacement=World+News&amp;feed_title_fallback=New+York+Times&amp;feed_render_image=0&amp;feed_render_link=0&amp;feed_title_link_open_new_tab=0&amp;feed_render_description=0&amp;item_count=10&amp;item_render_body=0&amp;item_published_label=&amp;item_published_format=%25a+%25b+%25e&amp;embed_tag=div+id%3D%22mainNews%22'></script> -->
+<div>
+            <blockquote class="reddit-embed-bq" data-embed-height="900">Posts from the <a
+        href="https://www.reddit.com/r/nba/">nba</a><br> community on Reddit</blockquote>
+<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
