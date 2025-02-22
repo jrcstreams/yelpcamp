@@ -30,7 +30,7 @@ main().catch(err => {
     console.log('MONGOOSE CONNECTION ERROR')
 });
 
-// UPDATE THE BELOW LINES FOR MONGO OR LOCAL // 
+// UPDATE THE BELOW LINES FOR MONGO OR LOCAL - EXIT OUT AND ACTIVATE THE ONE YOU DO AND DON'T NEED // 
 
 async function main() {
     // await mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
